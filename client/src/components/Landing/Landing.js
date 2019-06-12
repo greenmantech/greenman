@@ -3,6 +3,8 @@ import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import logo from '../../assets/images/logo.png';
 
 class Landing extends Component {
+
+
     constructor(){
         super()
     }

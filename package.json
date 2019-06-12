@@ -4,9 +4,17 @@
   "description": "Server for Greenman",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "android": "concurrently \"npm run server\" \"npm run android --prefix client",
+    "server": "nodemon server.js"
   },
   "author": "Joseph Akayesi",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "cloudinary": "^1.14.0",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14"
+  }
 }

@@ -1,0 +1,1 @@
+Development repository for the official Greenman rubbish awareness mobile application.

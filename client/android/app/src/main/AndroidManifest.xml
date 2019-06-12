@@ -2,7 +2,13 @@
   package="com.client">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -10,6 +16,9 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+      <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCkx3DqQBWHxFb3zNqtdRwsjDCmrKcXUTs"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
@@ -21,6 +30,7 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+          
     </application>
 
 </manifest>

@@ -14,12 +14,6 @@ const IndexNavigator = createBottomTabNavigator({
         screen: createStackNavigator({
             Home: {
                 screen: Home,
-                navigationOptions: {
-                    title: 'Home',
-                    headerStyle: { backgroundColor: '#333333' },
-                    headerTintColor: '#ffffff',
-                    headerTitleStyle: { textAlign: 'center', flex: 1 },
-                }
             }
         }),
         navigationOptions: {
@@ -29,13 +23,7 @@ const IndexNavigator = createBottomTabNavigator({
     Camera: {
         screen: createStackNavigator({
             Camera: {
-                screen: ({ navigation }) => <Camera />,
-                navigationOptions: {
-                    title: 'Camera',
-                    headerStyle: { backgroundColor: '#333333' },
-                    headerTintColor: '#ffffff',
-                    headerTitleStyle: { textAlign: 'center', flex: 1 },
-                }
+                screen: Camera,
             }
         }),
         navigationOptions: {
@@ -47,12 +35,6 @@ const IndexNavigator = createBottomTabNavigator({
         screen: createStackNavigator({
             Map: {
                 screen: Map,
-                navigationOptions: {
-                    title: 'Map',
-                    headerStyle: { backgroundColor: '#333333' },
-                    headerTintColor: '#ffffff',
-                    headerTitleStyle: { textAlign: 'center', flex: 1 },
-                }
             }
         }),
         navigationOptions: {
@@ -69,13 +51,14 @@ const IndexNavigator = createBottomTabNavigator({
             activeTintColor: '#fff',
             style: {
                 backgroundColor: '#fff',
-                borderColor: '#333',
-                shadowColor: '#fff',
-                shadowOffset: { width: 0, height: 0 },
-                shadowOpacity: 0.8,
-                shadowRadius: 2,
-                elevation: 1,
-                marginTop: 2
+                // borderColor: '#333',
+                shadowColor: 'grey',
+                shadowOffset: { width: 5, height: 5 },
+                shadowOpacity: 0.5,
+                shadowRadius: 10,
+                elevation: 4,
+                // marginTop: 2,
+                // boxShadow: "10px 5px 5px #333"
             }
         }
     })
